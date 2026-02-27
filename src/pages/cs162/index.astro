@@ -1,0 +1,129 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HorizontalCard from "../../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="CS162 Archive" sideBarActiveItemID="cs162">
+    <div>
+        <div class="text-3xl w-full font-bold mb-5">
+            CS162: Pintos Trauma Center 🖥️
+        </div>
+        <div class="mb-10 text-justify text-lg">
+            A 15,000-line C codebase from the 90s where everything is a race
+            condition. I am still emotionally recovering from debugging
+            deadlocks in kernel space.
+        </div>
+    </div>
+
+    <HorizontalCard
+        title="Discussion 1: C & Processes"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=fork()"
+        desc="fork(), exec(), wait(). The circle of life for an OS process."
+        url="#"
+        badge="Syscalls"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 2: Threads"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=pthread_t"
+        desc="User vs kernel threads, TCBs, and context switching."
+        url="#"
+        badge="Concurrency"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 3: Synchronization I"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=mutex_lock()"
+        desc="Locks, Mutexes, and Semaphores. Stopping threads from stepping on each other."
+        url="#"
+        badge="Locks"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 4: Synchronization II"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=cond_wait()"
+        desc="Monitors, condition variables, and solving the Producer-Consumer problem."
+        url="#"
+        badge="Wait/Signal"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 5: Scheduling"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=Round+Robin"
+        desc="FIFO, Round Robin, SRTF, and Multi-level Feedback Queues. Who gets the CPU?"
+        url="#"
+        badge="CPU"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 6: Deadlock"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=Deadlock"
+        desc="Coffman conditions and Banker's Algorithm. Dining philosophers starving to death."
+        url="#"
+        badge="Deadlock"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 7: Address Translation"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=malloc()"
+        desc="Base and bound, segmentation, and the illusion of contiguous memory."
+        url="#"
+        badge="Memory"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 8: Paging & TLBs"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=TLB+Miss"
+        desc="Page tables, Translation Lookaside Buffers, and the math of virtual addresses."
+        url="#"
+        badge="Paging"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 9: Demand Paging"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=Page+Fault"
+        desc="Page faults, eviction policies (LRU, Clock), and thrashing."
+        url="#"
+        badge="Swap"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 10: I/O & Disks"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=Disk+I/O"
+        desc="Interrupts, DMA, and HDD seek times. Moving metal plates to read your files."
+        url="#"
+        badge="I/O"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 11: File Systems"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=inode"
+        desc="Inodes, directories, and Berkeley's Fast File System."
+        url="#"
+        badge="FS"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 12: Advanced File Systems"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=fsck"
+        desc="Journaling, NTFS, and crash recovery. Don't lose my data when the power cuts."
+        url="#"
+        badge="Journal"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 13: Distributed Systems"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=RPC"
+        desc="Remote Procedure Calls. Treating network requests like local functions and praying."
+        url="#"
+        badge="Network"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 14: Two-Phase Commit"
+        img="https://placehold.co/600x400/111827/3b82f6?font=monospace&text=2PC"
+        desc="Distributed consensus, 2PC, and Network File Systems."
+        url="#"
+        badge="Distributed"
+    />
+</BaseLayout>

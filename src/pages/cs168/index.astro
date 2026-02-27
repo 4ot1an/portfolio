@@ -1,0 +1,120 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import HorizontalCard from "../../components/HorizontalCard.astro";
+---
+
+<BaseLayout title="CS168 Archive" sideBarActiveItemID="cs168">
+    <div>
+        <div class="text-3xl w-full font-bold mb-5">
+            CS168: Dropped Packets 🌐
+        </div>
+        <div class="mb-10 text-justify text-lg">
+            Three-way handshakes, BGP routing loops, and trying to figure out
+            why the packet didn't make it.
+        </div>
+    </div>
+
+    <HorizontalCard
+        title="Discussion 1: Architecture"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=OSI+Model"
+        desc="The OSI model, end-to-end principle, and sockets."
+        url="#"
+        badge="OSI"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 2: Physical & Link Layers"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=MAC+Address"
+        desc="Ethernet, MAC addresses, CSMA/CD, and switching. The actual wires."
+        url="#"
+        badge="Link"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 3: Distance Vector Routing"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=Bellman-Ford"
+        desc="RIP, count-to-infinity, and poisoned reverse."
+        url="#"
+        badge="DV"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 4: Link State Routing"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=Dijkstra"
+        desc="OSPF and flooding the network with Dijkstra updates."
+        url="#"
+        badge="LS"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 5: IP & Forwarding"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=IPv4/IPv6"
+        desc="CIDR blocks, subnets, and longest prefix matching."
+        url="#"
+        badge="IP"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 6: Transport Layer"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=SYN-ACK"
+        desc="Ports, checksums, and the three-way handshake."
+        url="#"
+        badge="TCP"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 7: TCP Reliability"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=Timeout"
+        desc="Sequence numbers, sliding windows, ACKs, and timeouts."
+        url="#"
+        badge="Reliable"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 8: TCP Congestion Control"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=AIMD"
+        desc="Additive Increase Multiplicative Decrease. Don't overwhelm the routers."
+        url="#"
+        badge="Congestion"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 9: BGP"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=BGP"
+        desc="Path vector routing. How autonomous systems talk and occasionally break the internet."
+        url="#"
+        badge="BGP"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 10: DNS"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=DNS"
+        desc="Root servers, TLDs, authoritative servers, and caching. It's always DNS."
+        url="#"
+        badge="DNS"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 11: HTTP & The Web"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=HTTP/2"
+        desc="HTTP/1.1 vs HTTP/2, REST, and the protocol we use for literally everything now."
+        url="#"
+        badge="HTTP"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 12: CDNs & P2P"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=CDN"
+        desc="Content Delivery Networks, BitTorrent, and scaling to millions of users."
+        url="#"
+        badge="CDN"
+    />
+    <div class="divider my-0"></div>
+    <HorizontalCard
+        title="Discussion 13: Network Security"
+        img="https://placehold.co/600x400/111827/f59e0b?font=monospace&text=DDoS"
+        desc="DDoS attacks, reflection attacks, and securing BGP/DNS."
+        url="#"
+        badge="Security"
+    />
+</BaseLayout>
